@@ -3,46 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Vitrine de Ofertas</title>
+    <title>Ofertas Premium | Seleção Mercado Livre</title>
     <style>
-        body { font-family: sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
-        header { text-align: center; margin-bottom: 30px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; width: 100%; max-width: 1000px; }
-        .card { background: white; border-radius: 10px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
-        .card img { max-width: 100%; height: 150px; object-fit: contain; border-radius: 5px; }
-        .card h3 { font-size: 1.1rem; color: #333; margin: 10px 0; }
-        .btn { display: block; background: #ff4500; color: white; text-decoration: none; padding: 10px; border-radius: 5px; font-weight: bold; margin-top: 10px; }
-        .btn:hover { background: #e63e00; }
-        footer { margin-top: 50px; font-size: 0.8rem; color: #777; text-align: center; max-width: 600px; }
+        :root {
+            --ml-yellow: #fff159;
+            --ml-blue: #3483fa;
+            --bg-gray: #ebebeb;
+        }
+        body { font-family: 'Proxima Nova', -apple-system, sans-serif; background-color: var(--bg-gray); margin: 0; padding: 0; }
+        header { background-color: var(--ml-yellow); padding: 20px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .logo { font-weight: bold; font-size: 1.5rem; color: #333; text-transform: uppercase; letter-spacing: 1px; }
+        
+        .container { max-width: 1100px; margin: 20px auto; padding: 10px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        
+        .card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: 0.3s; position: relative; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        
+        /* Selo Mais Vendido */
+        .badge { background: #ff7733; color: white; font-size: 11px; font-weight: bold; padding: 4px 8px; position: absolute; top: 10px; left: 10px; border-radius: 3px; text-transform: uppercase; }
+        
+        .card img { width: 100%; height: 230px; object-fit: contain; padding-top: 15px; }
+        .info { padding: 15px; border-top: 1px solid #eee; }
+        .title { font-size: 14px; color: #333; height: 40px; overflow: hidden; margin-bottom: 10px; line-height: 1.3; }
+        .rating { color: #00a650; font-size: 13px; font-weight: bold; margin-bottom: 5px; }
+        .price { font-size: 24px; color: #333; font-weight: 300; margin-bottom: 15px; }
+        
+        .btn-ml { 
+            display: block; background-color: var(--ml-blue); color: white; text-align: center; 
+            padding: 12px; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 16px;
+        }
+        .btn-ml:hover { background-color: #2968c8; }
+        
+        footer { text-align: center; padding: 40px; color: #666; font-size: 12px; line-height: 1.6; }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>🔥 Melhores Achados da Semana</h1>
-        <p>Produtos selecionados com os melhores preços!</p>
-    </header>
+<header>
+    <div class="logo">MERCADO LIVRE - ACHADOS DO DIA</div>
+    <p style="margin: 5px 0 0; font-size: 0.9rem; color: #333;">As melhores ofertas com entrega rápida e segura</p>
+</header>
 
+<div class="container">
     <div class="grid">
+
         <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Produto 1">
-            <h3>Fone de Ouvido Bluetooth</h3>
-            <p>De: R$ 120,00</p>
-            <p><strong>Por: R$ 69,90</strong></p>
-            <a href="SEU_LINK_AQUI" target="_blank" class="btn">Ver na Shopee</a>
+            <span class="badge">Mais Vendido</span>
+            <img src="https://http2.mlstatic.com/D_NQ_NP_611681-MLA75271101918_032024-O.webp" alt="PS5 Slim">
+            <div class="info">
+                <div class="rating">★ 4.9 (5000+ avaliações)</div>
+                <div class="title">Console Sony Playstation 5 Edição Slim Disk 1tb Branco + Controle Dualsense</div>
+                <div class="price">R$ 3.599,00</div>
+                <a href="https://mercadolivre.com/sec/2CZhW2a" target="_blank" class="btn-ml">Ver no Mercado Livre</a>
+            </div>
         </div>
 
         <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Produto 2">
-            <h3>Capa de Celular Anti-Impacto</h3>
-            <p><strong>Preço: R$ 25,00</strong></p>
-            <a href="SEU_LINK_AQUI" target="_blank" class="btn" style="background: #232f3e;">Ver na Amazon</a>
+            <img src="https://http2.mlstatic.com/D_NQ_NP_608125-MLU74333676110_022024-O.webp" alt="TV Philco">
+            <div class="info">
+                <div class="rating">★ 4.8 (10mil+ vendidos)</div>
+                <div class="title">Smart Tv 32 Philco Ptv32k34rkgb Roku Tv Led Dolby Audio</div>
+                <div class="price">R$ 879,00</div>
+                <a href="SEU_PROXIMO_LINK_AQUI" target="_blank" class="btn-ml">Ver no Mercado Livre</a>
+            </div>
         </div>
+
     </div>
+</div>
 
-    <footer>
-        <p>Aviso: Como afiliado, podemos receber uma comissão por compras qualificadas através de nossos links, sem custo adicional para você.</p>
-    </footer>
+<footer>
+    <p>Este site é um buscador de ofertas independente. <br>
+    Ao clicar nos botões, você será redirecionado para o site oficial do Mercado Livre.<br>
+    Como afiliado, recebemos uma pequena comissão por vendas qualificadas.</p>
+</footer>
 
 </body>
 </html>

@@ -3,66 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aquamax Original - Reduza sua Conta de Água em até 50%</title>
+    <title>Radar de Ofertas | JrWippel</title>
     <style>
-        :root { --ml-blue: #3483fa; --ml-yellow: #fff159; --success: #00a650; }
-        body { font-family: 'Proxima Nova', sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; background: #f5f5f5; }
+        :root { --ml-yellow: #fff159; --ml-blue: #3483fa; }
+        body { font-family: 'Proxima Nova', sans-serif; background: #ebebeb; margin: 0; padding: 0; }
         
-        header { background: var(--ml-yellow); padding: 15px; text-align: center; font-weight: bold; font-size: 1.2rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        /* Header Profissional */
+        header { background: var(--ml-yellow); padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .logo { font-weight: bold; color: #333; font-size: 1.2rem; }
         
-        .hero { background: white; padding: 40px 20px; text-align: center; }
-        .hero h1 { color: #222; margin-bottom: 10px; font-size: 1.8rem; }
-        .hero p { color: #666; font-size: 1.1rem; max-width: 600px; margin: 0 auto 20px; }
+        .container { max-width: 1000px; margin: 30px auto; padding: 0 15px; }
+        .welcome { background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; text-align: center; }
         
-        .product-box { max-width: 500px; margin: 0 auto; background: white; padding: 20px; border-radius: 12px; border: 1px solid #ddd; }
-        .product-img { width: 100%; max-width: 350px; height: auto; margin-bottom: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
         
-        .benefits { max-width: 600px; margin: 30px auto; padding: 20px; text-align: left; }
-        .benefit-item { display: flex; align-items: center; margin-bottom: 15px; font-weight: 500; }
-        .benefit-item span { color: var(--success); margin-right: 10px; font-size: 1.5rem; }
+        .card img { width: 100%; height: 200px; object-fit: contain; padding: 10px 0; }
+        .info { padding: 15px; border-top: 1px solid #eee; }
+        .category { font-size: 11px; color: var(--ml-blue); font-weight: bold; text-transform: uppercase; }
+        .title { font-size: 14px; color: #333; margin: 5px 0 15px; height: 40px; overflow: hidden; }
         
-        .cta-box { background: #fff; padding: 30px 20px; text-align: center; border-top: 2px solid var(--ml-yellow); }
-        .price { font-size: 2rem; font-weight: bold; color: #333; margin-bottom: 10px; }
-        
-        .btn-buy { 
-            display: inline-block; background: var(--ml-blue); color: white; padding: 20px 40px; 
-            text-decoration: none; border-radius: 8px; font-size: 1.3rem; font-weight: bold;
-            box-shadow: 0 4px 15px rgba(52, 131, 250, 0.3); transition: 0.3s;
+        .btn-ml { 
+            display: block; background: var(--ml-blue); color: white; text-align: center; 
+            padding: 12px; text-decoration: none; border-radius: 6px; font-weight: 600; 
         }
-        .btn-buy:hover { transform: scale(1.05); }
 
-        footer { padding: 40px 20px; font-size: 0.8rem; color: #888; text-align: center; }
+        footer { text-align: center; padding: 40px; color: #666; font-size: 12px; }
     </style>
 </head>
 <body>
 
-<header>PROMOÇÃO EXCLUSIVA MERCADO LIVRE ⚡</header>
+<header>
+    <div class="logo">📡 RADAR DE OFERTAS</div>
+    <div style="font-size: 12px;">Parceiro Oficial Mercado Livre</div>
+</header>
 
-<section class="hero">
-    <h1>Pare de Pagar por Ar na sua Conta de Água!</h1>
-    <p>O Bloqueador Aquamax é a solução definitiva para reduzir sua fatura mensal de forma legal e segura.</p>
-    
-    <div class="product-box">
-        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_641078-MLB105706466392_012026-F.webp" alt="Aquamax" class="product-img">
-        <div class="benefits">
-            <div class="benefit-item"><span>✓</span> Redução imediata de até 50% na conta</div>
-            <div class="benefit-item"><span>✓</span> Fácil instalação (faça você mesmo)</div>
-            <div class="benefit-item"><span>✓</span> Produto original com garantia</div>
-            <div class="benefit-item"><span>✓</span> Blindado contra corrosão</div>
+<div class="container">
+    <div class="welcome">
+        <h2>Bem-vindo à nossa seleção de hoje!</h2>
+        <p>Garimpamos o Mercado Livre para encontrar os produtos com melhor avaliação e entrega Full.</p>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_641078-MLB105706466392_012026-F.webp" alt="Aquamax">
+            <div class="info">
+                <div class="category">Casa & Utilidades</div>
+                <div class="title">Bloqueador De Ar Aquamax Válvula Redutora De Conta D'água</div>
+                <a href="https://mercadolivre.com/sec/1NritCt" target="_blank" class="btn-ml">Ver Oferta</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_921596-MLA100042443481_122025-F.webp" alt="PS5">
+            <div class="info">
+                <div class="category">Games</div>
+                <div class="title">Console Sony Playstation 5 Slim 1TB + Controle DualSense</div>
+                <a href="https://mercadolivre.com/sec/2CZhW2a" target="_blank" class="btn-ml">Ver Oferta</a>
+            </div>
         </div>
     </div>
-</section>
-
-<section class="cta-box">
-    <p>Adquira agora com segurança através do Mercado Livre</p>
-    <div class="price">Oferta Especial</div>
-    <a href="https://mercadolivre.com/sec/1NritCt" target="_blank" class="btn-buy">QUERO ECONOMIZAR AGORA</a>
-    <p style="margin-top: 15px; font-size: 0.9rem; color: #00a650;">⭐ Entrega rápida disponível para sua região</p>
-</section>
+</div>
 
 <footer>
-    <p><strong>Aviso:</strong> Este site é uma página de recomendação. Ao clicar, você será redirecionado para a loja oficial no Mercado Livre.<br>
-    Como afiliado, recebemos uma comissão por vendas realizadas através deste link.</p>
+    <p>JrWippel Ofertas - CNPJ/CPF: [Seu Documento] <br>
+    Participamos do Programa de Afiliados do Mercado Livre. Segurança e entrega garantida pela plataforma oficial.</p>
 </footer>
 
 </body>

@@ -23,7 +23,7 @@ header {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     padding: 20px;
 }
@@ -70,40 +70,33 @@ tr:hover {
     background: #f1f1f1;
 }
 
-.affiliate-section {
-    background: white;
-    padding: 40px 20px;
-    margin-top: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+table img {
+    width: 60px;
+    border-radius: 6px;
 }
 
-.affiliate-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 15px;
-}
-
-.affiliate-item img {
-    width: 70px;
-    height: 70px;
-    object-fit: contain;
-}
-
-.btn {
-    display: inline-block;
-    padding: 8px 12px;
+.btn-table {
+    padding: 6px 10px;
     background: #00a650;
     color: white;
     text-decoration: none;
     border-radius: 6px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: bold;
+    display: inline-block;
 }
 
-.btn:hover {
+.btn-table:hover {
     background: #008f43;
+}
+
+@media(max-width: 768px){
+    table {
+        font-size: 0.75rem;
+    }
+    table img {
+        width: 45px;
+    }
 }
 
 footer {
@@ -127,7 +120,7 @@ footer {
 
 <section class="card">
 <h2>O que um bom fone precisa ter em 2026?</h2>
-<p>Um fone de ouvido premium precisa entregar áudio equilibrado, graves definidos, médios claros e agudos sem distorção. Além disso, tecnologias como cancelamento de ruído ativo (ANC), áudio espacial, Bluetooth 5.3+, boa autonomia de bateria e conforto prolongado são essenciais. Nossa seleção foi baseada nesses critérios, além da reputação da marca e avaliações globais.</p>
+<p>Um fone de ouvido premium precisa entregar áudio equilibrado, graves definidos, médios claros e agudos sem distorção. Além disso, tecnologias como cancelamento de ruído ativo (ANC), áudio espacial, Bluetooth 5.3+, boa autonomia de bateria e conforto prolongado são essenciais. Nossa seleção foi baseada nesses critérios técnicos, reputação das marcas e avaliações internacionais.</p>
 </section>
 
 <section class="card">
@@ -160,102 +153,70 @@ footer {
 <p>Versão wireless com som refinado, conforto premium e cancelamento adaptativo de ruído.</p>
 </section>
 
-<h2>📊 Tabela Comparativa</h2>
+<h2>📊 Tabela Comparativa Completa</h2>
+
 <table>
 <tr>
+<th>Imagem</th>
 <th>Modelo</th>
 <th>Cancelamento</th>
 <th>Bateria</th>
 <th>Destaque</th>
 <th>Nota</th>
+<th>Onde Comprar</th>
 </tr>
 
 <tr>
+<td><img src="images/sony.jpg"></td>
 <td>Sony WH-1000XM6</td>
 <td>⭐⭐⭐⭐⭐</td>
 <td>30h</td>
 <td>Melhor geral</td>
 <td>9.8/10</td>
+<td><a href="https://mercadolivre.com/sec/227jiAw" target="_blank" class="btn-table">Comprar</a></td>
 </tr>
 
 <tr>
+<td><img src="images/bose-ultra.jpg"></td>
 <td>Bose QC Ultra</td>
 <td>⭐⭐⭐⭐⭐</td>
 <td>24h</td>
 <td>Mais confortável</td>
 <td>9.6/10</td>
+<td><a href="https://mercadolivre.com/sec/32i4uo5" target="_blank" class="btn-table">Comprar</a></td>
 </tr>
 
 <tr>
+<td><img src="images/airpods-max.jpg"></td>
 <td>AirPods Max</td>
 <td>⭐⭐⭐⭐</td>
 <td>20h</td>
 <td>Ecossistema Apple</td>
 <td>9.2/10</td>
+<td><a href="https://mercadolivre.com/sec/1wHAbYT" target="_blank" class="btn-table">Comprar</a></td>
 </tr>
 
 <tr>
+<td><img src="images/qcy.jpg"></td>
 <td>QCY V200</td>
 <td>⭐⭐⭐</td>
 <td>40h</td>
 <td>Custo-benefício</td>
 <td>8.7/10</td>
+<td><a href="https://mercadolivre.com/sec/2ssAZGa" target="_blank" class="btn-table">Comprar</a></td>
 </tr>
 
 <tr>
+<td><img src="images/bose-wireless.jpg"></td>
 <td>Bose QC Ultra Wireless</td>
 <td>⭐⭐⭐⭐⭐</td>
 <td>24h</td>
 <td>Som refinado</td>
 <td>9.5/10</td>
+<td><a href="https://mercadolivre.com/sec/1RwugHF" target="_blank" class="btn-table">Comprar</a></td>
 </tr>
 
 </table>
-
-<div class="affiliate-section">
-<h2>🛒 Onde Comprar</h2>
-
-<div class="affiliate-item">
-<img src="images/sony.jpg">
-<div>
-<strong>Sony WH-1000XM6</strong><br>
-<a href="https://mercadolivre.com/sec/227jiAw" target="_blank" class="btn">Ver no Mercado Livre</a>
-</div>
-</div>
-
-<div class="affiliate-item">
-<img src="images/bose-ultra.jpg">
-<div>
-<strong>Bose QuietComfort Ultra</strong><br>
-<a href="https://mercadolivre.com/sec/32i4uo5" target="_blank" class="btn">Ver no Mercado Livre</a>
-</div>
-</div>
-
-<div class="affiliate-item">
-<img src="images/airpods-max.jpg">
-<div>
-<strong>Apple AirPods Max</strong><br>
-<a href="https://mercadolivre.com/sec/1wHAbYT" target="_blank" class="btn">Ver no Mercado Livre</a>
-</div>
-</div>
-
-<div class="affiliate-item">
-<img src="images/qcy.jpg">
-<div>
-<strong>QCY Tri-Mode Heroad V200</strong><br>
-<a href="https://mercadolivre.com/sec/2ssAZGa" target="_blank" class="btn">Ver no Mercado Livre</a>
-</div>
-</div>
-
-<div class="affiliate-item">
-<img src="images/bose-wireless.jpg">
-<div>
-<strong>Bose QC Ultra Wireless</strong><br>
-<a href="https://mercadolivre.com/sec/1RwugHF" target="_blank" class="btn">Ver no Mercado Livre</a>
-</div>
-</div>
-
-</div>
 
 </div>
 
